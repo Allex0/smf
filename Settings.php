@@ -56,7 +56,7 @@ $language = 'english';
  *
  * @var string
  */
-$boardurl = 'http://localhost/terrahub';
+$boardurl = 'http://localhost/smf';
 /**
  * Email address to send emails from. (like noreply@yourdomain.com.)
  *
@@ -176,7 +176,7 @@ $cache_memcached = '';
  *
  * @var string
  */
-$cachedir = 'C:/wamp64/www/smf_forum/cache';
+$cachedir = 'C:/wamp64/www/smf/cache';
 
 ########## Image Proxy ##########
 # This is done entirely in Settings.php to avoid loading the DB while serving the images
@@ -191,7 +191,7 @@ $image_proxy_enabled = false;
  *
  * @var string
  */
-$image_proxy_secret = 'e53e8658cbc7a9059457';
+$image_proxy_secret = '812c2a5cc5c7c2541e83';
 /**
  * Maximum file size (in KB) for individual files
  *
@@ -206,26 +206,27 @@ $image_proxy_maxsize = 5192;
  *
  * @var string
  */
-$boarddir = 'C:/wamp64/www/smf_forum';
+$boarddir = 'C:/wamp64/www/smf';
 /**
  * Path to the Sources directory.
  *
  * @var string
  */
-$sourcedir = 'C:/wamp64/www/smf_forum/Sources';
+$sourcedir = 'C:/wamp64/www/smf/Sources';
 /**
  * Path to the Packages directory.
  *
  * @var string
  */
-$packagesdir = 'C:/wamp64/www/smf_forum/Packages';
+$packagesdir = 'C:/wamp64/www/smf/Packages';
 /**
  * Path to the tasks directory.
  *
  * @var string
  */
-$tasksdir = 'C:/wamp64/www/smf_forum/Sources/tasks';
-$auth_secret = '57e55a28139884d770e115892d037365b9f1a497856b26bd53835737d028deb1';
+$tasksdir = 'C:/wamp64/www/smf/Sources/tasks';
+$auth_secret = 'a6ea891fae4a710750708e49d623f4d3304682d9ed7b70209b1876e199301dd0';
+$cachedir_sqlite = 'C:/wamp64/www/smf/cache';
 
 # Make sure the paths are correct... at least try to fix them.
 if (!is_dir(realpath($boarddir)) && file_exists(dirname(__FILE__) . '/agreement.txt'))
